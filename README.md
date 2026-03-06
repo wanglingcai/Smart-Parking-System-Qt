@@ -15,8 +15,8 @@
 * **核心数据结构**: 顺序栈、链式队列、散列表(Hash)
 
 ## 📸 运行截图 (Screenshots)
-> 注：可在此处放几张你软件完美运行时的截图展示。
+<img width="1588" height="888" alt="a6651db5-f0bb-4cc9-a3c4-c55463207a46" src="https://github.com/user-attachments/assets/15b5f499-4f1f-4f27-89bb-6e0983458b02" />
 
-## 👨‍💻 作者 (Author)
-* 王令材 (Wang Lingcai)
-* 软件工程 - 计243-1
+><img width="1286" height="693" alt="87892af2-df28-4a99-b15b-f4d75e48ac06" src="https://github.com/user-attachments/assets/83bb56f2-2eaf-47ea-9f0e-ff9ac6624a32" />
+
+![Uploading c2f70ef2-48f7-48ee-9716-9fc997074c4d.png…]()
