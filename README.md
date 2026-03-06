@@ -21,3 +21,16 @@
 
 <img width="1288" height="758" alt="c2f70ef2-48f7-48ee-9716-9fc997074c4d" src="https://github.com/user-attachments/assets/214eee75-0f65-40fe-bd65-d6dc1ffba6d9" />
 
+## ⚙️ 编译与运行指南 (How to Build)
+本项目基于 CMake 构建，依赖 Qt 多媒体模块。请确保您的开发环境满足以下要求：
+
+1. **环境准备**:
+   * 安装 **Qt 6.10.2** 或以上版本 (安装时必须勾选 `Qt Multimedia` 模块)。
+   * 编译器：**MinGW 64-bit** (或 MSVC 2019+)。
+   * 构建工具：**CMake 3.20+**。
+2. **克隆与编译**:
+   * 将本项目 Clone 到本地：`git clone https://github.com/你的用户名/Smart-Parking-System-Qt.git`
+   * 使用 Qt Creator 打开根目录下的 `CMakeLists.txt`。
+   * 配置项目并点击左下角的 🔨 (Build) 进行编译。
+3. **数据文件说明**:
+   * 系统首次运行或退出时，会自动在编译生成的 `.exe` 同级目录下生成 `parking_data.txt` 用于持久化存储。
