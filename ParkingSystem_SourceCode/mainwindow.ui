@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1029</width>
+    <height>575</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QListWidget" name="listQueue">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>400</y>
+      <width>781</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="flow">
+     <enum>QListView::Flow::LeftToRight</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>410</y>
+      <width>60</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>等待入场</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>317</x>
+      <y>11</y>
+      <width>691</width>
+      <height>381</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_7">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_8">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_6">
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_4">
+           <item>
+            <widget class="QLabel" name="label_7">
+             <property name="text">
+              <string>车位栈道</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignmentFlag::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QListWidget" name="listStack"/>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_5">
+           <item>
+            <widget class="QLabel" name="label_8">
+             <property name="text">
+              <string>挪位栈道</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignmentFlag::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QListWidget" name="listTemp"/>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_6">
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_5">
+           <item>
+            <widget class="QLabel" name="labelStatus">
+             <property name="contextMenuPolicy">
+              <enum>Qt::ContextMenuPolicy::NoContextMenu</enum>
+             </property>
+             <property name="text">
+              <string>状态</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignmentFlag::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QTextBrowser" name="textLog"/>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_7"/>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>301</width>
+      <height>241</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_9">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <widget class="QLabel" name="label_5">
+           <property name="text">
+            <string>车型</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignmentFlag::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="comboType">
+           <item>
+            <property name="text">
+             <string>小型车</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>大型车</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <widget class="QLabel" name="label_4">
+           <property name="text">
+            <string>排量</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignmentFlag::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="comboExhaust">
+           <item>
+            <property name="text">
+             <string>1.5L</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>1.6L</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>2.0L</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>1.5T</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>2.0T</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>纯电</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <item>
+          <widget class="QLabel" name="label_3">
+           <property name="text">
+            <string>颜色</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignmentFlag::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="comboColor">
+           <item>
+            <property name="text">
+             <string>红</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>橙</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>黄</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>绿</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>青</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>蓝</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>紫</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>黑</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>白</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>灰</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>银</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>棕</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>双拼</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_8">
+         <item>
+          <widget class="QLabel" name="label_2">
+           <property name="text">
+            <string>品牌</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignmentFlag::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="comboBrand">
+           <item>
+            <property name="text">
+             <string>大众</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>奥迪</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>保时捷</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>路虎</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>沃尔沃</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>马自达</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>特斯拉</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>丰田</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>宝马</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>奔驰</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>比亚迪</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>请输入车牌号</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignmentFlag::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="inputPlate">
+       <property name="alignment">
+        <set>Qt::AlignmentFlag::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnEnter">
+       <property name="text">
+        <string>车辆入场</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnExit">
+       <property name="text">
+        <string>车辆出场</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnQuery">
+       <property name="text">
+        <string>查询车辆</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1029</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
